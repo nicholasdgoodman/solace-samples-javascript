@@ -1,0 +1,1 @@
+window.solace = require('solclientjs/lib-browser/solclient-debug');

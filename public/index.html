@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+    
+    http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+  -->
+
+<!--
+    Solace Web Messaging API for JavaScript
+    RequestReply tutorial - Basic Replier
+    Demonstrates sending a request and receiving a reply
+  -->
+
+<html lang="en">
+
+<head>
+  <title>Solace Web Messaging API for JavaScript Request/Reply tutorial - Basic Replier</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="../../resources/css/pure.css">
+  </link>
+  <link rel="stylesheet" type="text/css" href="../../resources/css/samples.css">
+  </link>
+
+  <!-- Execute the RequestReply Basic Replier tutorial -->
+  <script>
+
+  </script>
+  <style>
+    .sample-link {
+      margin-bottom: 2px;
+    }
+    .sample-link a {
+      text-decoration: none;
+      color: #00c895;
+    }
+    .sample-link a:hover {
+      color: #006448;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="banner-interior">
+      <span class="logo">
+        <a href="http://dev.solace.com/">
+          <img src="../../resources/images/solace-logo-white.png" />
+        </a>
+      </span>
+      <div class="banner-heading">
+        Solace Web Messaging API for JavaScript
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-body">
+    <h2>Tutorials</h2>
+    <div id="basic-samples">
+      <h3>Basic Samples</h3>
+    </div>
+    <div id="features">
+      <h3>Advanced Samples</h3>
+    </div>
+  </div>
+
+  <script>
+    var links = {
+      'basic-samples': [
+        { label: 'Topic Subscriber', href: '/TopicSubscriber/TopicSubscriber.html' },
+        { label: 'Topic Publisher', href: '/TopicPublisher/TopicPublisher.html' },
+        { label: 'Basic Requestor', href: '/BasicRequestor/BasicRequestor.html' },
+        { label: 'Basic Replier', href: '/BasicReplier/BasicReplier.html' },
+        { label: 'Queue Consumer', href: '/QueueConsumer/QueueConsumer.html' },
+        { label: 'Queue Producer', href: '/QueueProducer/QueueProducer.html' },
+        { label: 'Confirmed Push', href: '/ConfirmedPush/ConfirmedPush.html' },
+      ],
+      'features': [
+        { label: 'Active Consumer Indication', href: 'ActiveConsumerIndication/ActiveConsumerIndication.html' },
+        { label: 'DTE Consumer', href: 'DTEConsumer/DTEConsumer.html' },
+        { label: 'Event Monitor', href: 'EventMonitor/EventMonitor.html' },
+        { label: 'Guaranteed Replier', href: 'GuaranteedReplier/GuaranteedReplier.html' },
+        { label: 'Guaranteed Requestor', href: 'GuaranteedRequestor/GuaranteedRequestor.html' },
+        { label: 'Message Replay', href: 'MessageReplay/MessageReplay.html' },
+        { label: 'No Local PubSub', href: 'NoLocalPubSub/NoLocalPubSub.html' },
+        { label: 'SecureSession', href: 'SecureSession/SecureSession.html' },
+      ]
+    };
+
+    Object.keys(links).forEach(function(key) {
+      var section = document.getElementById(key);
+      var sectionLinks = links[key];
+
+      sectionLinks.forEach(function(link) {
+        var divElement = document.createElement('div');
+        var linkElement = document.createElement('a');
+        divElement.className = 'sample-link';
+        linkElement.href = '/' + key + link.href;
+        linkElement.innerText = link.label;
+        divElement.appendChild(linkElement);
+        section.appendChild(divElement);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "solace-samples-javascript",
+  "version": "1.0.0",
+  "description": "Solace JavaScript API Samples",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode=development --open --no-client-overlay-warnings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolaceSamples/solace-samples-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/SolaceSamples/solace-samples-javascript/issues"
+  },
+  "homepage": "https://github.com/SolaceSamples/solace-samples-javascript#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "solclientjs": "^10.10.0"
+  }
+}

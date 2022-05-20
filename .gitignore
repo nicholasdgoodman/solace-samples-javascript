@@ -1,7 +1,8 @@
 *.class
-
+node_modules
 hs_err_pid*
 _site
 .DS_Store
 docs/_site
 .idea
+dist
